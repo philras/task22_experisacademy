@@ -9,15 +9,15 @@ function person(name, age, type){
     this.type = type;
 }
 
-var data = new person(
-    "Philippe",
-    25,
-    "Super Human");
+var data = new Array();
 
-app.use('/static', express.static('resources'));
+data.push(new person("Philippe", 25, "Super human"));
+data.push(new person("Ralf", 31, "Useless human"));
+
+app.use('/static',  express.static('resources'));
 
 app.get('/', (req, res) => {
- res.sendFile(path.join(__dirname + '/hello.html'))
+ res.sendFile(path.join(__dirname + '/index.html'))
 });
 
 app.get('/info', (req, res) => {

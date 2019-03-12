@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>_title_</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>_title_</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style type="text/css">
+        img {
+            border-radius: 50%;
+            float: right;
+        }
+
+        .rotate90 {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+
+    </style>
 </head>
 
 <body>
-    <h1>Info about moi</h1>
-    <p>I am a super human being who's purpose is to find the ultimate kebab in the world</p>
+
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link active" href="/info">Info</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/pictures">Pictures</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/data">Raw Data</a>
+        </li>
+
+    </ul>
+
+    <div class="container">
+        <div class="jumbotron">
+            <img src="static/20180625_233028.jpg" height="200px" width="200px">
+            <h1 class="display-4">Philippe</h1>
+            <p class="lead">Is a super human being who's purpose is to find the ultimate kebab in the world</p>
+        </div>
+
+        <div class="jumbotron">
+            <img src="static/ralf.jpg" height="200px" width="200px" class="rotate90">
+            <h1 class="display-4">Ralf</h1>
+            <p class="lead">A person who made his life goal to annoy Craig with sourcecodes that is not compiling</p>
+        </div>
+    </div>
+
+
 </body>
+
 </html>

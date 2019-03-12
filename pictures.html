@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>_title_</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>_title_</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <style type="text/css">
+        img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .rotate90 {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+
+    </style>
 </head>
 
 <body>
-    <img src="static/phillysteak.png">
-    
-    <img src="static/20180625_233028.jpg">
+
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/info">Info</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link active" href="/pictures">Pictures</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/data">Raw Data</a>
+        </li>
+
+    </ul>
+
+    <div class="container">
+        <img src="static/phillysteak.png">
+
+        <img src="static/20180625_233028.jpg">
+        
+        <img src="static/ralf.jpg" class="rotate90">
+        
+        <img src="static/ralf2.jpg">
+    </div>
+
+
 </body>
+
 </html>
